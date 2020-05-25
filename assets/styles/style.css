@@ -404,7 +404,6 @@ input {
 }
 
 #select_period {
-    margin-left: 200px;
     outline: none;
     border: none;
     -webkit-appearance: none;
@@ -425,16 +424,25 @@ input {
 
 .your_stat_filter {
     display: flex;
-    width: 100%;
+    width: 60%;
 }
 .filter_item {
     line-height: 26px;
 }
 .your_stat {
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+}
+
+.your_stat_title{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #000000;
 }
 .your_stat_filter {
     display: -webkit-inline-box;
@@ -495,4 +503,7 @@ input {
 .book {
     margin-left: 65px;
     margin-top: 30px;
+}
+.stat_wrapper {
+    display: flex;
 }
