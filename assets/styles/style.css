@@ -1,0 +1,498 @@
+html { 
+    overflow-x: hidden; 
+}
+.wrapper {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.header {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+    background-color: #000;
+    min-height: 853px;
+    max-width: 132px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    margin: 24px 32px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 49%;
+    width: 19.6%;
+    margin-bottom: 130px;
+    cursor: pointer;
+
+}
+.turn {
+    transition: .5s;  
+}
+
+.turn:hover {
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+   }
+
+.scale {
+    transition: 1s; 
+   }
+.scale:hover {
+    transform: scale(1.2); 
+}
+
+.main {
+    display: block;
+    box-sizing: border-box;
+    width: 45%;
+    margin-left: 70px;
+}
+.main_header {
+    margin-top: 55px;
+    position: relative;
+    height: 160px;
+    width: 100%;
+    background: #F5F5F7;
+    border-radius: 14px;
+}
+.header_wrapper {
+    position: absolute;
+    width: 100%;
+    background: #F5F5F7;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_text {
+    margin-left: 31px;
+}
+.header_img {
+    margin-right: 105px;
+}
+
+.header_title {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 57px;
+
+    color: #000000;
+}
+.header_subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+.my_courses {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    height: 80px;
+    padding: 19px 8.5px;
+    background-color:#F5F5F7;
+}
+.course_passed {
+    padding: 18px 24px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.percent_text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #000000;
+    position: relative;
+}
+.percent_border {
+    position: absolute;
+    left: -10px;
+    top: -12px;
+}
+
+.buttons {
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+    margin-left: 47.5px;
+
+}
+
+.arrow_scale {
+    transition: .5s; 
+}
+.arrow_scale:hover {
+    transform: scale(1.2); 
+    background-color: orange;
+    border-radius: 200%;
+}
+button {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 0.8125em;
+    line-height: 15px;
+    padding: 12.55px 33.5px 12.45px;
+    margin-right: 22px;
+    margin-left: 28px;
+    border: none;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover {
+    opacity: .7;
+}
+.courses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.courses_filter {
+    display: -webkit-inline-box;
+    justify-content: flex-start;
+    margin: 15px 0 10px;
+    line-height: 26px;
+}
+.filter_item {
+    margin-right: 30px;  
+}
+.filter_item:not(:first-child){
+    opacity: .3;
+}
+a {
+    color: #000;
+}
+h1, h2, h3 {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.courses_title {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #000000;
+}
+.course_subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    
+    color: #000000;
+}
+
+.course_wehave {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px ;
+    background-color: #F5F5F7;
+    border-radius: 14px;
+}
+.course_duration {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.course_raiting {
+    display: flex;
+}
+
+.duration,
+.raiting {
+    margin-right: 5px;
+}
+
+.clock_img {
+    margin-right: 10px;
+}
+
+.fire_img {
+    margin-right: 10px;
+}
+
+.img_background {
+    min-width: 64px;
+    min-height: 64px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8.5px;
+}
+input {
+    background: #F5F5F7 left 10px center url(../images/search.svg) no-repeat;
+    border-radius: 8px;
+    min-width: 300px;
+    height: 40px;
+    border: none;
+    padding: 5px 5px 5px 40px;
+
+}
+
+.my_info {
+    width: 40%;
+    margin-left: 65px;
+}
+
+.my_acc {
+    display: flex;
+    margin-top: 55PX;
+    margin-right: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.message_bell {
+    display: flex;
+    cursor: pointer; 
+    margin-left: 37px;
+}
+
+@keyframes thumb {
+    0% { transform: scale(1); }
+    50% {transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+
+.message_bell:hover
+{
+    animation-name: thumb;
+    animation-duration: 200ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+.bell_info {
+    margin-left: -5px;
+    margin-top: -5px;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background-color: #F45B5B;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 13px;
+}
+
+.my_account_info {
+    display: flex; 
+    margin-left: 26px;
+    cursor: pointer; 
+}
+
+.bottom_arrow {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.bottom_arrow:hover {
+    animation-name: floating;
+    -webkit-animation-name: floating;
+ 
+    animation-duration: 1.5s;   
+    -webkit-animation-duration: 1.5s;
+ 
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+ 
+@keyframes floating {
+    0% {
+        transform: translateY(0%);  
+    }
+    50% {
+        transform: translateY(8%);  
+    }   
+    100% {
+        transform: translateY(0%);
+    }           
+}
+ 
+@-webkit-keyframes floating {
+    0% {
+        -webkit-transform: translateY(0%);  
+    }
+    50% {
+        -webkit-transform: translateY(8%);  
+    }   
+    100% {
+        -webkit-transform: translateY(0%);
+    }           
+}
+
+.stat {
+    margin-left: 50px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    justify-content: space-between;
+}
+
+.completed,
+.inprogress {
+    max-width: 208px;
+    height: 96.33px;
+    display: flex;
+    align-items: center;
+    padding: 18px 36px;
+}
+
+.completed_number,
+.inprogress_number{
+    font-family: Baloo Bhai 2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 102px;
+
+    color: #000000;
+}
+.completed_text,
+.inprogress_text {
+    margin-left: 30px;
+    max-width: 80px;
+    height: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+.course_statt {
+    display: flex;
+    max-width: 208px;
+    height: 96.33px;
+    background: #F5F5F7;
+    border-radius: 14px;
+    align-items: center;
+}
+
+#select_period {
+    margin-left: 200px;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    height: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #000000;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+}
+
+.your_stat_filter {
+    display: flex;
+    width: 100%;
+}
+.filter_item {
+    line-height: 26px;
+}
+.your_stat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.your_stat_filter {
+    display: -webkit-inline-box;
+    justify-content: flex-start;
+    margin: 15px 0 10px;
+    line-height: 26px;
+}
+.graph {
+    max-width: 449.59px;
+    height: 266.15px;
+    margin-top: 30px;
+}
+
+.learnmore{
+    width: 440px;
+    height: 193px;
+    background: #F5F5F7;
+    border-radius: 14px;
+    display: flex;
+    margin-top: 49px;
+    padding: 20px 35px;
+}
+
+.l_text {
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+.l_title {
+    width: 176px;
+    height: 38px;
+    font-family: Baloo Bhai 2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #000000;
+
+}
+
+.l_subtitle {
+    width: 179px;
+    height: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+#button {
+    margin-left: 0;
+    margin-top: 20px;
+}
+.book {
+    margin-left: 65px;
+    margin-top: 30px;
+}
