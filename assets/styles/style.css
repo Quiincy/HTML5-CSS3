@@ -132,6 +132,10 @@ ul {
     top: -12px;
 }
 
+.left {
+    margin-right: 10px;
+}
+
 .buttons {
     display: flex;
     width: 15%;
