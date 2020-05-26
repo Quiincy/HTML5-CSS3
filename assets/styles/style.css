@@ -11,6 +11,7 @@ html {
     background-color: #000;
     min-height: 853px;
     max-width: 132px;
+    min-width: 80px;
     justify-content: space-between;
     align-items: center;
     border-radius: 24px;
