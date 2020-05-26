@@ -112,6 +112,7 @@ ul {
 
 }
 .course_passed {
+    height: 80px;
     width: 85%;
     display: flex;
     justify-content: space-between;
