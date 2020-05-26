@@ -54,7 +54,7 @@ ul {
 .main {
     display: block;
     box-sizing: border-box;
-    width: 45%;
+    min-width: 45%;
     margin-left: 70px;
 }
 .main_header {
