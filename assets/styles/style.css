@@ -258,6 +258,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     margin-left: 8.5px;
+    border-radius: 14px;
 }
 input {
     background: #F5F5F7 left 10px center url(../images/search.svg) no-repeat;
