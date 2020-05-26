@@ -431,6 +431,7 @@ input {
 
 
 #select_period {
+    background: #F5F5F7;
     outline: none;
     border: none;
     -webkit-appearance: none;
@@ -447,6 +448,11 @@ input {
 .select {
   display: flex;
   align-items: center;
+  width: 88px;
+  height: 32px;
+  background: #F5F5F7;
+  border-radius: 8px;
+  justify-content: center;
 }
 
 .your_stat_filter {
@@ -533,4 +539,5 @@ input {
 }
 .stat_wrapper {
     display: flex;
+    align-items: center;
 }
