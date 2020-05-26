@@ -60,16 +60,15 @@ ul {
 }
 .main_header {
     margin-top: 55px;
-    position: relative;
     height: 160px;
     width: 100%;
     background: #F5F5F7;
     border-radius: 14px;
 }
 .header_wrapper {
-    position: absolute;
     width: 100%;
     background: #F5F5F7;
+    height: 160px;
     border-radius: 14px;
     display: flex;
     justify-content: space-between;
@@ -80,6 +79,9 @@ ul {
 }
 .header_img {
     margin-right: 105px;
+    position: relative;
+    align-self: flex-end;
+
 }
 
 .header_title {
