@@ -151,7 +151,7 @@ ul {
 }
 
 .arrow_scale {
-    transition: .5s; 
+    transition: .3s; 
 }
 .arrow_scale:hover {
     transform: scale(1.2); 
@@ -174,7 +174,7 @@ button {
     outline: none;
 }
 button:hover {
-    opacity: .7;
+    background: orange;
 }
 .courses {
     width: 100%;
@@ -233,6 +233,14 @@ h1, h2, h3 {
 .course_title {
     min-width: 160px;
 }
+.course_title {
+    cursor: pointer;
+}
+
+.course_title:hover{
+    color:orange;
+    opacity: .5;
+}
 
 .course_duration {
     display: flex;
@@ -256,6 +264,7 @@ h1, h2, h3 {
 }
 
 .img_background {
+    cursor: pointer;
     min-width: 64px;
     min-height: 64px;
     background-color: white;
@@ -265,7 +274,15 @@ h1, h2, h3 {
     margin-left: 8.5px;
     margin-right: 8.5px;
     border-radius: 14px;
+    transition: 1s; 
 }
+.img_background:hover { 
+    background-color: orange;
+    opacity: .9;
+    transform: scale(1.2);
+}
+
+
 input {
     background: #F5F5F7 left 10px center url(../images/search.svg) no-repeat;
     border-radius: 8px;
